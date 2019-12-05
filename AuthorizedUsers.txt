@@ -1,0 +1,3 @@
+Mitch Lichtenberg, 123456, FALSE, TRUE, TRUE, TRUE, TRUE
+Ali Lichtenberg, 111222, FALSE, FALSE, TRUE, FALSE, TRUE
+Zack Lichtenberg, 554333, TRUE, FALSE, TRUE, FALSE, TRUE
