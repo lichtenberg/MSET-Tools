@@ -1,7 +1,7 @@
 [
-{name:"Mitch Lichtenberg", badge:123456, bandsaw:false, drillpress:true, mitersaw:true, lathe:true, cncrouter:true},
-{name:"Sara Biyabani", badge:3322226, bandsaw:false, drillpress:true, mitersaw:true, lathe:true, cncrouter:true},
-{name:"Ali lichtenberg", badge:111222, bandsaw:false, drillpress:false, mitersaw:true, lathe:false, cncrouter:true},
-{name:"Zack Lichtenberg", badge:554333, bandsaw:true, drillpress:false, mitersaw:true, lathe:false, cncrouter:true}
+{id:1, name:"Mitch Lichtenberg", badge:123456, bandsaw:false, drillpress:true, mitersaw:true, lathe:true, cncrouter:true},
+{id:2, name:"Sara Biyabani", badge:3322226, bandsaw:false, drillpress:true, mitersaw:true, lathe:true, cncrouter:true},
+{id:3, name:"Ali lichtenberg", badge:111222, bandsaw:false, drillpress:false, mitersaw:true, lathe:false, cncrouter:true},
+{id:4, name:"Zack Lichtenberg", badge:554333, bandsaw:true, drillpress:false, mitersaw:true, lathe:false, cncrouter:true},
 ]
 
