@@ -1,7 +1,7 @@
 [
-["Mitch Lichtenberg", 123456, false, true, true, true, true],
-["Sara Biyabani", 3322226, false, true, true, true, true],
-["Ali lichtenberg", 111222, false, false, true, false, true],
-["Zack Lichtenberg", 554333, true, false, true, false, true]
+{name:"Mitch Lichtenberg", badge:123456, bandsaw:false, drillpress:true, mitersaw:true, lathe:true, cncrouter:true},
+{name:"Sara Biyabani", badge:3322226, bandsaw:false, drillpress:true, mitersaw:true, lathe:true, cncrouter:true},
+{name:"Ali lichtenberg", badge:111222, bandsaw:false, drillpress:false, mitersaw:true, lathe:false, cncrouter:true},
+{name:"Zack Lichtenberg", badge:554333, bandsaw:true, drillpress:false, mitersaw:true, lathe:false, cncrouter:true}
 ]
 
