@@ -30,6 +30,9 @@
 <script>
 
 const plant = new Plant()
+
+console.log("Initialized plant\n")
+
 plant.use('oauth/redirect', ({req, res}) => {
       console.log("We got called back!")
       res.html('<!DOCTYPE html><html><body>Hello</body></html>')
