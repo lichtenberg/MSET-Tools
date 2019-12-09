@@ -23,13 +23,37 @@
 </body>
 <script>
 
-// We can get the token from the "access_token" query
-// param, available in the browsers "location" global
-	const query = window.location.search.substring(1)
-	const token = query.split('code=')[1]
+   // We can get the token from the "access_token" query
+   // param, available in the browsers "location" global
+   const query = window.location.search.substring(1)
+   const requestToken = query.split('code=')[1]
 
-        const nameNode = document.createTextNode(`Code is, ${token}`)
-	document.body.appendChild(nameNode)
+   const nameNode = document.createTextNode(`Code is, ${requestToken}`)
+   document.body.appendChild(nameNode)
+
+   const clientID = 'Iv1.6cb495e6740befb7'
+   const clientSecret = '0c324eecd76b3487290d410a0a067dc52f8b14c0'
+
+   $.ajax({
+      'url' : `https://github.com/login/oauth/access_token?client_id=${clientID}&client_secret=${clientSecret}&code=${requestToken}`,
+      'type' : 'POST',
+      'dataType' : 'application/json',
+
+              'success': function (result) {
+                //Process success actions
+                var returnResult = JSON.stringify(result);
+                alert('Success!\r\n' + returnResult);
+                document.getElementById('callResults').innerHTML = returnResult;
+                return result;
+              },
+              'error': function (XMLHttpRequest, textStatus, errorThrown) {
+                //Process error actions
+                alert('Error: ' + errorThrown);
+                console.log(XMLHttpRequest.status + ' ' + 
+                    XMLHttpRequest.statusText);
+                return false;
+              }
+          });
 
 
 </script>
