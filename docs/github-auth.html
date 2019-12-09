@@ -35,7 +35,7 @@
    const clientSecret = '0c324eecd76b3487290d410a0a067dc52f8b14c0'
 
    $.ajax({
-      'url' : `https://github.com/login/oauth/access_token?client_id=${clientID}&client_secret=${clientSecret}&code=${requestToken}`,
+      'url' : `https://github.com/login/oauth/access_token?client_id=${clientID}&client_secret=${clientSecret}&code=${requestToken}&redirect_uri=https://lichtenberg.github.io/MSET-Tools/mset-tools.html`,
       'type' : 'POST',
       'dataType' : 'application/json',
 
