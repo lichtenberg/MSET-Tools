@@ -19,7 +19,7 @@
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Fri Dec  6 12:12:48 PST 2019 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Wed Dec 11 10:27:25 PST 2019 <!-- hhmts end -->
 </body>
 <script>
 
@@ -36,7 +36,8 @@
 
    $.ajax({
       'url' : `https://github.com/login/oauth/access_token?client_id=${clientID}&client_secret=${clientSecret}&code=${requestToken}&redirect_uri=https://lichtenberg.github.io/MSET-Tools/mset-tools.html`,
-      'type' : 'POST',
+'type' : 'POST',
+      'crossDoman' : true,
       'dataType' : 'application/json',
 
               'success': function (result) {
