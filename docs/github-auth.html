@@ -38,8 +38,7 @@
       url : `https://github.com/login/oauth/access_token?client_id=${clientID}&client_secret=${clientSecret}&code=${requestToken}&redirect_uri=https://lichtenberg.github.io/MSET-Tools/mset-tools.html`,
       type : 'POST',
       crossDomain : true,
-      headers: {  'Access-Control-Allow-Origin': 'https://lichtenberg.github.io' },
-      dataType : 'application/json',
+     dataType : 'application/json',
 
       success: function (result) {
                 //Process success actions
