@@ -67,7 +67,8 @@ function commitToGithub()
         userList[idx].id = idx+1;
     }
 
-    var newData = JSON.stringify(userList);
+    // Use the fancy stringify to make merges with git easier.
+    var newData = JSON.stringify(userList, null, 2);
 
 
     var lichtenberg = gh.getRepo('lichtenberg','MSET-Tools');
