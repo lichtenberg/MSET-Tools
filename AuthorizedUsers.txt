@@ -4,7 +4,8 @@
     "active": true,
     "mentor": true,
     "cncrouter": true,
-    "id": 1
+    "id": 1,
+    "badge": "45345"
   },
   {
     "name": "Fred Rogers",
