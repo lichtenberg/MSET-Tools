@@ -1,0 +1,11 @@
+[
+    { "bandsaw": "Band Saw"},
+    { "mitersaw" : "Miter Saw"},
+    { "drillpress" : "Drill Press"},
+    { "lathe" : "Lathe"},
+    { "bigmill" : "Big Mill"},
+    { "smallmill" : "Small Mill"},
+    { "shopbot" : "ShopBot"},
+    { "tormach" : "Tormach CNC"}
+]
+    
