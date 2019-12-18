@@ -12,6 +12,8 @@ var gh = new GitHub({
 
 var repo = gh.getRepo('lichtenberg','MSET-Tools');
 
+var toolList = []
+
 repo.getContents("master","ToolList.json",true,
                  function(err,stuff) {
                      toolList = stuff;
