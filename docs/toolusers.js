@@ -15,6 +15,7 @@ var table = new Tabulator("#example-table", {
            }},
         {title:"Name", field:"name", width:200, editor:"input"},
         {title:"Active", field:"active", formatter:"tickCross", editor:true},
+        {title:"Mentor", field:"mentor", formatter:"tickCross", editor:true},
         {title:"Badge#", field:"badge", editor:"input"},
         {title:"Band Saw", field:"bandsaw",formatter:"tickCross", editor:true},
         {title:"Drill Press", field:"drillpress", formatter:"tickCross",editor:"tickCross"},
