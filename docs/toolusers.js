@@ -6,6 +6,11 @@ var accessToken = urlParams.get('access_token')
 
 console.log(`Our access token is ${accessToken}`)
 
+var gh = new GitHub({
+     token: accessToken
+     });
+
+var repo = gh.getRepo('lichtenberg','MSET-Tools');
 
 var table = new Tabulator("#example-table", {
         //height:"311px",
@@ -57,9 +62,9 @@ function commitToGithub()
     document.getElementById("commit-changes").disabled = true;
     document.getElementById("commit-changes").innerHTML = "working..."
 
-    var gh = new GitHub({
-        token: accessToken
-        });
+//    var gh = new GitHub({
+//        token: accessToken
+//        });
 
     var userList = table.getData();
 
@@ -72,9 +77,9 @@ function commitToGithub()
     var newData = JSON.stringify(userList, null, 2);
 
 
-    var lichtenberg = gh.getRepo('lichtenberg','MSET-Tools');
+//    var lichtenberg = gh.getRepo('lichtenberg','MSET-Tools');
 
-    lichtenberg.writeFile("master","AuthorizedUsers.txt",newData,"Updated user list from web",function(err,stuff) {
+    repo.writeFile("master","AuthorizedUsers.txt",newData,"Updated user list from web",function(err,stuff) {
             console.log(err);
             console.log(stuff);
             document.getElementById("commit-changes").disabled = false;
@@ -85,13 +90,12 @@ function commitToGithub()
 }
 
 function loadTableFromGithub() {
-    var gh = new GitHub({
-        token: accessToken
-        });
+//    var gh = new GitHub({
+//        token: accessToken
+//        });
 
-
-    var lichtenberg = gh.getRepo('lichtenberg','MSET-Tools');
-    lichtenberg.getContents("master","AuthorizedUsers.txt",true,
+  //  var lichtenberg = gh.getRepo('lichtenberg','MSET-Tools');
+    repo.getContents("master","AuthorizedUsers.txt",true,
                             function(err,stuff) {
                                 console.log(stuff);
                                 table.setData(stuff);
