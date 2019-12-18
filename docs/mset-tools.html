@@ -1,15 +1,52 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <html> <head>
-<title>M-SET Tools welcomes you</title>
+<title>M-SET Power Tool Authorized Users</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<link href="https://unpkg.com/tabulator-tables@4.5.1/dist/css/tabulator.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.5.1/dist/js/tabulator.min.js"></script>
+<script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
+
+
 </head>
 
 <body>
-<h1>We made it!</h1>
-
-Yay, welcome!
+<div class="container">
+  <h1>M-SET
+  <small class="font-weight-lighter">Power Tool Authorization System</small>
+  </h1>
+  <div class="card">
+    <div class="card-body">Mentors: Use this page to authorize
+      students to activate tools.  After changes, use the LCD on the
+      tool controller to re-load the data from this table.</div>
+  </div>
+</div>
+<br><br>
 
 
 <hr>
-<address></address>
-<!-- hhmts start --> Last modified: Sun Dec  8 20:39:23 PST 2019 <!-- hhmts end -->
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="btn-group-vertical">
+        <button type="button" id="add-user" class="btn btn-outline-primary btn-sm">Add User</button>
+        <button type="button" id="del-user" class="btn btn-outline-primary btn-sm">Remove Selected</button>
+        <button type="button" id="undo-changes" class="btn btn-outline-primary btn-sm">Undo Changes</button>
+        <button type="button" id="commit-changes" class="btn btn-outline-success btn-sm">Commit Changes</button>
+      </div>
+    </div>
+    <div class="col">
+       <div id="example-table"></div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="toolusers.js"></script>
+
 </body> </html>
