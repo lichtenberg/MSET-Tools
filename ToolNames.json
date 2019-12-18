@@ -1,11 +1,11 @@
 [
-    { "bandsaw": "Band Saw"},
-    { "mitersaw" : "Miter Saw"},
-    { "drillpress" : "Drill Press"},
-    { "lathe" : "Lathe"},
-    { "bigmill" : "Big Mill"},
-    { "smallmill" : "Small Mill"},
-    { "shopbot" : "ShopBot"},
-    { "tormach" : "Tormach CNC"}
+    { key: "bandsaw", name: "Band Saw"},
+    { key: "mitersaw", name: "Miter Saw"},
+    { key: "drillpress", name: "Drill Press"},
+    { key: "lathe" , name: "Lathe"},
+    { key: "bigmill" , name: "Big Mill"},
+    { key: "smallmill", name: "Small Mill"},
+    { key: "shopbot" , name: "ShopBot"},
+    { key: "tormach" , name: "Tormach CNC"}
 ]
     
