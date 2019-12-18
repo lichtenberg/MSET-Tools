@@ -57,7 +57,6 @@ function commitToGithub()
     document.getElementById("commit-changes").innerHTML = "working..."
 
     var gh = new GitHub({
-        username: 'lichtenberg',
         token: accessToken
         });
 
@@ -85,7 +84,6 @@ function commitToGithub()
 
 function loadTableFromGithub() {
     var gh = new GitHub({
-        username: 'lichtenberg',
         token: accessToken
         });
 
