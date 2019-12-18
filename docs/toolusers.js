@@ -12,6 +12,15 @@ var gh = new GitHub({
 
 var repo = gh.getRepo('lichtenberg','MSET-Tools');
 
+repo.getContents("master","ToolList.json",true,
+                 function(err,stuff) {
+                     toolList = stuff;
+                 }
+                );
+
+console.log(toolList);
+
+
 var table = new Tabulator("#example-table", {
         //height:"311px",
     columns:[
@@ -62,10 +71,6 @@ function commitToGithub()
     document.getElementById("commit-changes").disabled = true;
     document.getElementById("commit-changes").innerHTML = "working..."
 
-//    var gh = new GitHub({
-//        token: accessToken
-//        });
-
     var userList = table.getData();
 
     // Renumber all the users.
@@ -75,9 +80,6 @@ function commitToGithub()
 
     // Use the fancy stringify to make merges with git easier.
     var newData = JSON.stringify(userList, null, 2);
-
-
-//    var lichtenberg = gh.getRepo('lichtenberg','MSET-Tools');
 
     repo.writeFile("master","AuthorizedUsers.txt",newData,"Updated user list from web",function(err,stuff) {
             console.log(err);
@@ -90,11 +92,7 @@ function commitToGithub()
 }
 
 function loadTableFromGithub() {
-//    var gh = new GitHub({
-//        token: accessToken
-//        });
 
-  //  var lichtenberg = gh.getRepo('lichtenberg','MSET-Tools');
     repo.getContents("master","AuthorizedUsers.txt",true,
                             function(err,stuff) {
                                 console.log(stuff);
