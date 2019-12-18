@@ -1,8 +1,16 @@
 [
   {
+    "name": "Bob France",
+    "active": true,
+    "mentor": true,
+    "cncrouter": true,
+    "id": 1,
+    "badge": "45345"
+  },
+  {
     "name": "Fred Rogers",
     "badge": "52333",
-    "id": 1,
+    "id": 2,
     "active": true
   },
   {
@@ -10,7 +18,7 @@
     "badge": "332444",
     "bandsaw": true,
     "mitersaw": true,
-    "id": 2
+    "id": 3
   },
   {
     "name": "Reed Kingston",
@@ -21,16 +29,16 @@
     "mitersaw": true,
     "lathe": true,
     "cncrouter": true,
-    "id": 3
+    "id": 4
   },
   {
     "name": "Cat Dog",
     "active": true,
     "badge": "1234",
-    "id": 4
+    "id": 5
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "Mitch Lichtenberg",
     "badge": 123456,
     "bandsaw": false,
@@ -40,7 +48,7 @@
     "cncrouter": true
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Sara Biyabani",
     "badge": 3322226,
     "bandsaw": false,
@@ -50,7 +58,7 @@
     "cncrouter": true
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Ali lichtenberg",
     "badge": 111222,
     "bandsaw": false,
@@ -60,7 +68,7 @@
     "cncrouter": true
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Zack Lichtenberg",
     "badge": 554333,
     "bandsaw": true,
