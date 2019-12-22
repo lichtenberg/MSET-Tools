@@ -65,7 +65,8 @@
     "drillpress": false,
     "mitersaw": true,
     "lathe": false,
-    "cncrouter": true
+    "cncrouter": true,
+    "mentor": true
   },
   {
     "id": 9,
